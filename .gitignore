@@ -76,3 +76,7 @@ Temporary Items
 _site/
 .sass-cache/
 .jekyll-metadata
+
+
+### PIA ###
+/videos/

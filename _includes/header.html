@@ -1,6 +1,9 @@
-<h4><a class="brand" href="{{ site.baseurl }}/">
-        <img id="mainlogo" src="/img/pia-logo.png"/>
-        {{ site.title }}
+<h4>
+    <a href="{% if site.baseurl != "" %}{{ site.baseurl }}{% else %}/{% endif %}">
+        <img id="mainlogo" src="/img/pia-logo.png" title="Private Internet Access"/>
+        <span class="brand">
+            {{ site.title }}
+        </span>
+        {% if site.subtitle %}<small>{{ site.subtitle }}</small>{% endif %}
     </a>
-    {% if site.subtitle %}<small>{{ site.subtitle }}</small>{% endif %}
 </h4>

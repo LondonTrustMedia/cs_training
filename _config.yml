@@ -1,5 +1,5 @@
 # Site title and subtitle. This is used in _includes/header.html
-title: 'T1/T2 Tech Training'
+title: 'T1/T2 Technical Training'
 subtitle: ''
 
 # if you wish to integrate disqus on pages set your shortname here
@@ -19,12 +19,15 @@ codeurl: ''
 
 # Default categories (in order) to appear in the navigation
 collections:
+  computers:
+    output: true
+    display: Computers
   networking:
     output: true
     display: Networking
-  tut:
+  vpn:
     output: true
-    display: Tutorial
+    display: VPNs
   ref:
     output: true
     display: Reference

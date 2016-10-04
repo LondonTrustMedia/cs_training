@@ -3,6 +3,9 @@ layout: default
 title: "PIA T1/T2 Tech Training"
 ---
 
+<img class="pagelogo" src="/img/pia-logo.png" title="Private Internet Access"/>
+
+# T1/T2 Technical Training
 
 ### Disclaimer
 
