@@ -1,18 +1,23 @@
 ---
 layout: default
-title: "Jekyll Docs Template"
+title: "PIA T1/T2 Tech Training"
 ---
+
+
+### Disclaimer
+
+<div class="disclaimer">This website is the sole property of London Trust Media. This confidential website contains trade secrets and proprietary information relating to Private Internet Access and London Trust Media. No use or disclosure of the information contained herein is permitted without the prior written consent of London Trust Media. All marks, trademarks and product names used in this document are the property of their respective owners.</div>
+
 
 ### Get Started
 
-Start by [creating a new post](http://jekyllrb.com/docs/posts/) one of the categories listed in `_config.yml`. It will appear in the navigation on the left once recompiled. Or use the supplied script to make creating pages easier:
+Welcome! This site contains information that's useful for T1 and T2 agents on the PIA Technical Support team to know.
 
-```bash
-ruby bin/jekyll-page "Some Page Title" ref
-```
+The tabs on the left link to specific sections/articles. If there's a video to go along with a specific article, it will be linked in the start of that article.
 
-#### Don't Forget
+If you'd like to have a physical copy to go through, all articles are printable.
 
-- Add your own content to this page (i.e. `index.md`) and change the `title`
-- Change `title` and `subtitle` defined in `config.yml` for your site
-- Set the `baseurl` in `_config.yml` for your repo if deploying to GitHub pages
+
+### Issues, Bugs and Problems, Oh My!
+
+You may find issues with this site, the linked videos, or the content on here. If you do, please reach out to the technical support managers (or your supervisor) so that these can be corrected!
