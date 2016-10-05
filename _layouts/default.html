@@ -63,49 +63,50 @@
 
         <script>
             function orderNav() {
-                var list,
-                    section,
-                    header,
-                    sections = [],
-                    lists = {},
-                    headers = {};
+                var navLists = document.querySelectorAll('#navlists')[0]
+                if (!navLists) return;
 
-                var navUl = document.querySelectorAll('#navigation ul')[0],
-                    navLis = document.querySelectorAll('#navigation ul li');
+                var navSections = [],
+                    navHTML = "";
 
-                if (!navUl) return;
+                // sort nav sections
+                for (var i = 0; i < navLists.children.length; i++) {
+                    var order, ul = navLists.children[i];
 
-                for (var i = 0; i < navLis.length; i++) {
-                    var order, li = navLis[i];
-
-                    if (li.classList.contains('nav-header')) {
-                        section = li.textContent || li.innerText;
-                        sections.push(section);
-                        headers[section] = li;
-                        continue;
-                    }
-
-                    if (!lists[section]) {
-                        lists[section] = [];
-                    }
-
-                    order = parseFloat(li.getAttribute('data-order'))
-                    lists[section].push([order, li]);
+                    order = parseFloat(ul.getAttribute('data-order'))
+                    navSections.push([order, ul])
                 }
 
-                for (var i = 0; i < sections.length; i++) {
-                    section = sections[i];
-                    list = lists[section].sort(function(a, b) {
-                        return a[0] - b[0];
+                navSections = navSections.sort(function(a, b) {
+                    return a[0] - b[0]
+                });
+
+                // sort items, then assemble and apply html
+                for (var i = 0; i < navSections.length; i++) {
+                    // sort items in section
+                    var navItems = [],
+                        navSectionHTML = "";
+                    for (var j = 0; j < navSections[i][1].children.length; j++) {
+                        var order, ul = navSections[i][1].children[j];
+
+                        order = parseFloat(ul.getAttribute('data-order'))
+                        navItems.push([order, ul])
+                    }
+
+                    navItems = navItems.sort(function(a, b) {
+                        return a[0] - b[0]
                     });
 
-                    if (header = headers[section]) {
-                        navUl.appendChild(header);
+                    // assemble and apply HTML
+                    for (var j = 0; j < navItems.length; j++) {
+                        navSectionHTML += navItems[j][1].outerHTML;
                     }
-                    for (var j = 0; j < list.length; j++) {
-                        navUl.appendChild(list[j][1]);
-                    }
+
+                    navSections[i][1].innerHTML = navSectionHTML
+                    navHTML += navSections[i][1].outerHTML;
                 }
+
+                navLists.innerHTML = navHTML;
             }
 
             if (document.querySelectorAll) orderNav();

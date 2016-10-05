@@ -1,13 +1,16 @@
 <ul class="nav nav-list">
     <li><a href="{{ site.baseurl }}/">Home</a></li>
-    {% for section in site.collections %}
-        {% for page in section.docs %}
-            {% if forloop.first and section.display %}
-                <li class="nav-header">{{ section.display }}</li>
-            {% endif %}
-            <li data-order="{{ page.order }}"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-        {% endfor %}
-    {% endfor %}
-<!-- List additional links. It is recommended to add a divider
-    e.g. <li class="divider"></li> first to break up the content. -->
 </ul>
+
+<div id="navlists">
+{% for collection in site.collections %}
+<ul class="nav nav-list section" data-order="{% if collection.order %}{{ collection.order }}{% else %}1{% endif %}">
+    {% for page in collection.docs %}
+        {% if forloop.first and collection.display %}
+            <li class="nav-header">{{ collection.display }}</li>
+        {% endif %}
+        <li data-order="{% if page.order %}{{ page.order }}{% else %}1{% endif %}"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% endfor %}
+</div>
