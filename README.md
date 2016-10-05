@@ -2,6 +2,8 @@
 
 This repo contains the primary package of technical training for PIA T1/T2 agents.
 
+This website is the sole property of London Trust Media. This confidential website contains trade secrets and proprietary information relating to Private Internet Access and London Trust Media. No use or disclosure of the information contained herein is permitted without the prior written consent of London Trust Media. All marks, trademarks and product names used in this document are the property of their respective owners.
+
 
 ## Build Instructions
 
