@@ -4,12 +4,23 @@
 
 <div id="navlists">
 {% for collection in site.collections %}
+
+{% capture collection_index_url %}{% for page in collection.docs %}{% if page.is_index %}{{ page.url }}{% endif %}{% endfor %}{% endcapture %}
+
 <ul class="nav nav-list section" data-order="{% if collection.order %}{{ collection.order }}{% else %}1{% endif %}">
     {% for page in collection.docs %}
+        {% if page.is_index %}{% else %}
         {% if forloop.first and collection.display %}
-            <li class="nav-header">{{ collection.display }}</li>
+            <li class="nav-header">
+                {% if collection_index_url != "" %}
+                    <a href="{{ site.baseurl }}{{ collection_index_url }}">{{ collection.display }}</a>
+                {% else %}
+                    <span>{{ collection.display }}</span>
+                {% endif %}
+            </li>
         {% endif %}
         <li data-order="{% if page.order %}{{ page.order }}{% else %}1{% endif %}"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+        {% endif %}
     {% endfor %}
     </ul>
 {% endfor %}
