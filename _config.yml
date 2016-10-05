@@ -22,21 +22,19 @@ collections:
   computers:
     output: true
     display: Computers
+    order: 1
   networking:
     output: true
     display: Networking
+    order: 2
   vpn:
     output: true
     display: VPNs
-  ref:
+    order: 3
+  desktopapp:
     output: true
-    display: Reference
-  dev:
-    output: true
-    display: Developers
-  post:
-    output: true
-    display: Posts
+    display: Desktop App
+    order: 4
 
 # Keep as an empty string if served up at the root. If served up at a specific
 # path (e.g. on GitHub pages) leave off the trailing slash, e.g. /my-project

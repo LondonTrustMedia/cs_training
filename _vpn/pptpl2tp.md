@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Protocol Overview
-order: 3
+title: PPTP / L2TP
+order: 4
 ---
 this is a test page

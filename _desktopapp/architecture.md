@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Protocol Overview
-order: 3
+title: Architecture
+order: 2
 ---
 this is a test page

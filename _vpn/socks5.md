@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Protocol Overview
-order: 3
+title: SOCKS Proxy
+order: 6
 ---
 this is a test page

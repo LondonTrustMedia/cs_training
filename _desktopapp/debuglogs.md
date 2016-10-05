@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Protocol Overview
+title: Debug Logs
 order: 3
 ---
 this is a test page
