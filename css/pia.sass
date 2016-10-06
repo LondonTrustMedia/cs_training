@@ -41,6 +41,28 @@ $pia-text-color: #30882f
     color: #fff
     text-shadow: none
 
+.advanced
+    //TODO: add hover CSS tooltop that says 'this is an advanced section', etc etc
+    &::before
+        display: block
+        font-family: "Material Design Icons", "Helvetica Neue", Helvetica, Arial, sans-serif
+        content: "\F2FC  Advanced"
+        font-size: 1.3rem
+        color: #1b79a9
+        float: right
+
+    margin: 2rem 0
+    padding: 2rem 2.15rem 2rem 2.6rem
+    border-radius: 3rem 0.35rem 0.35rem 3rem
+    background: aliceblue
+    & p:last-child
+        margin-bottom: 0
+
+#content img
+    display: block
+    max-width: 80%
+    margin: 3rem auto
+
 h1
     text-align: center
     font-size: 2.3rem
@@ -50,3 +72,22 @@ video
     margin: 0 auto
     max-width: 80%
     max-height: 100%
+
+@media print
+    #navigation, .video-notice
+        display: none
+    #mainlogo
+        display: block
+        margin: 0 auto 1rem
+        width: 50%
+    #header .brand
+        display: block
+        text-align: center
+    #header a
+        font-size: 0  // hides the silly url marker after the text... fix properly later
+    .advanced
+        border-radius: 2rem
+        border: 0.15rem dotted #888
+        break-inside: avoid
+    h1, h2, h3, h4, h5
+        break-after: avoid
