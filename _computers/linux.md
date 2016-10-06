@@ -9,8 +9,8 @@ This article goes over core concepts that should help you better understand how 
 
 There's also a video version of this article here:
 <video controls>
-    <source src="/videos/computers/linux-core-concepts.mp4" type="video/mp4">
-    <source src="/videos/computers/linux-core-concepts.mkv">
+    <source src="{{ site.baseurl }}/videos/computers/linux-core-concepts.mp4" type="video/mp4">
+    <source src="{{ site.baseurl }}/videos/computers/linux-core-concepts.mkv">
 </video>
 </div>
 
@@ -27,7 +27,7 @@ At a very high level, Windows, Mac, and Linux-based operating systems are all sp
 
 For a more visual explanation, here's what this sort of typical OS layout looks like:
 
-![OS Layout](/img/articles/computers-linux/os-layout.svg "OS Layout")
+![OS Layout]({{ site.baseurl }}/img/articles/computers-linux/os-layout.svg "OS Layout")
 
 In a way, the kernel _abstracts_ the hardware, the system software _abstracts_ the kernel, and the user-level apps are what people actually use to get work done (user apps communicate with both the system software and occasionally the kernel to accomplish their tasks). The operating system bundles some user apps with it (such as Notepad on Windows or Safari on OSX), and the other user apps are installed afterwards (such as Firefox, Google Chrome, or Adobe Illustrator).
 
@@ -37,7 +37,7 @@ Both Windows and Mac come with this full set of software. If you take a Windows 
 
 Here's a picture showing the differences between Windows/Mac and Linux, and how Linux itself is not an operating system.
 
-![OS Suite](/img/articles/computers-linux/os-suite.svg "OS Suite")
+![OS Suite]({{ site.baseurl }}/img/articles/computers-linux/os-suite.svg "OS Suite")
 
 
 ### Distributions
@@ -48,13 +48,13 @@ Distributions are collections of the kernel, as well as a set of system software
 
 A Linux distribution is roughly equivalent to Windows or OSX. You can burn a release of a distribution to a DVD, then put it in your computer and install it just as you can put a Windows DVD into your computer and do the same.
 
-![Distro Suite](/img/articles/computers-linux/distro-suite.svg "Distros")
+![Distro Suite]({{ site.baseurl }}/img/articles/computers-linux/distro-suite.svg "Distros")
 
 There are many different Linux distributions – each with their own desktop, system software, quirks and methods of operation. Because of this, it's very difficult to write a set of instructions that works with a majority of Linux installs out there.
 
 The main Linux distributions that people use today are Ubuntu and Fedora, but there are a large number of alternatives that people install and use every day.
 
-![Distributions](/img/articles/computers-linux/distributions.svg "Distributions")
+![Distributions]({{ site.baseurl }}/img/articles/computers-linux/distributions.svg "Distributions")
 
 Linux distributions can also be based on (or 'source' from) another distribution. For instance, Linux Mint is based on Ubuntu. Because of this, a great deal of the Ubuntu commands work with Mint, and Mint can install the same software that Ubuntu can. Ubuntu could be referred to as "Linux Mint's upstream distribution".
 
@@ -72,7 +72,7 @@ With Windows and Mac, you can't change the system software and packaged user app
 
 In Linux, a package is just a collected bundle of software, configuration files and documentation. Linux simplifies the management of which software is installed (that is, which packages are installed) through package management.
 
-![Anatomy of a Package](/img/articles/computers-linux/package.svg "Anatomy of a package")
+![Anatomy of a Package]({{ site.baseurl }}/img/articles/computers-linux/package.svg "Anatomy of a package")
 
 Many different people have proposed ways to store packages. However, there are two primary ones in use today:
 
