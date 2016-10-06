@@ -9,6 +9,7 @@ This article goes over core concepts that should help you better understand how 
 
 There's also a video version of this article here:
 <video controls>
+    <source src="/videos/computers/linux-core-concepts.mp4" type="video/mp4">
     <source src="/videos/computers/linux-core-concepts.mkv">
 </video>
 </div>
@@ -84,9 +85,9 @@ The package management system is an integral part of a Linux distribution, and t
 	<p><strong>What is a Rolling Release?</strong></p>
 	<p>Most distros make a release every few months, or a few times a year. For each release of their distro, they manage a separate set of packages. This is typically done to help increase stability and reduce the likelihood of things breaking while updating software.</p>
 	<p>'Rolling Release' refers to a package management system where instead, only one set of packages is kept &ndash; the latest. Whenever you update, you get the entire set of new software (which means that the core software that runs your OS is contantly being updated).</p>
-	<p>The main upside of rolling release distros is that they are typically much more up-to-date than regular distros.</p>
-	<p>The main downside of rolling release distros is that there is a higher chance of them breaking while updating, since they update the core software used in your OS much more often than regular distros would.</p>
-	<p>There are upsides and downsides to either approach, but at this point rolling release distros are not as commonly-used as regular ones.</p>
+	<p>The main upside of rolling release distros is that they are typically much more up-to-date than regular distros. With regular distros, packages are only updated and rebuilt when the distro manufacturer specifically update them. Regular distros often fail to apply security patches to these not-often-used packages.</p>
+	<p>The main downside of rolling release distros is that there is a higher chance of them breaking while updating, since they update the core software used in your OS much more often than regular distros would. Regular distros claim to test updated packages more thoroughly before releasing them, to reduce the chance of breakages when someone updates their system.</p>
+	<p>There are upsides and downsides to either approach, but at this point rolling release distros are not as commonly-used as the standard release-based ones.</p>
 </div>
 
 
