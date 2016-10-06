@@ -15,7 +15,7 @@ $pia-text-color: #30882f
     margin-right: 1rem
 
 #navigation li.nav-header
-    & a, & span
+    a, span
         display: block
         margin-top: 1rem
         padding: 1rem 1.2rem
@@ -24,9 +24,14 @@ $pia-text-color: #30882f
         color: #fff
         text-shadow: none
 
-#navigation li a
-    padding: 1rem 2rem
-    color: $pia-text-color
+#navigation li
+    a, span
+        display: block
+        padding: 1rem 2rem
+    a
+        color: $pia-text-color
+    span
+        color: #999
 
 .pagelogo
     display: block
@@ -74,7 +79,7 @@ video
     max-height: 100%
 
 @media print
-    #navigation, .video-notice
+    #navigation, .video-notice, .hideprinted
         display: none
     #mainlogo
         display: block
@@ -85,6 +90,13 @@ video
         text-align: center
     #header a
         font-size: 0  // hides the silly url marker after the text... fix properly later
+    .disclaimer
+        font-size: 1.4rem
+        padding: 2rem
+        font-weight: bold
+        border-radius: 2rem
+        border: 1rem dotted #888
+        break-inside: avoid
     .advanced
         border-radius: 2rem
         border: 0.15rem dotted #888
