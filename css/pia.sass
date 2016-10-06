@@ -33,11 +33,6 @@ $pia-text-color: #30882f
     span
         color: #999
 
-.pagelogo
-    display: block
-    margin: 1rem auto
-    max-width: 50%
-
 .disclaimer
     margin: 2rem 0
     padding: 1.2rem 1.3rem
@@ -67,6 +62,10 @@ $pia-text-color: #30882f
     display: block
     max-width: 80%
     margin: 3rem auto
+    &.pagelogo
+        display: block
+        margin: 1.4rem auto 0
+        width: 70%
 
 h1
     text-align: center
@@ -78,13 +77,16 @@ video
     max-width: 80%
     max-height: 100%
 
+@media screen
+    .hidescreen
+        display: none
 @media print
     #navigation, .video-notice, .hideprinted
         display: none
     #mainlogo
         display: block
         margin: 0 auto 1rem
-        width: 50%
+        width: 65%
     #header .brand
         display: block
         text-align: center

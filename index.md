@@ -4,11 +4,13 @@ title: "PIA T1/T2 Tech Training"
 ---
 
 <div class="hideprinted">
-	<img class="pagelogo" src="/img/pia-logo.png" title="Private Internet Access"/>
+	<img class="pagelogo" src="/img/pia-logo.svg" title="Private Internet Access"/>
 	<h1>T1/T2 Technical Training</h1>
 </div>
 
-<div class="disclaimer">This website is the sole property of London Trust Media. This confidential website contains trade secrets and proprietary information relating to Private Internet Access and London Trust Media. No use or disclosure of the information contained herein is permitted without the prior written consent of London Trust Media. All marks, trademarks and product names used in this document are the property of their respective owners.</div>
+<div class="disclaimer">
+{% include disclaimer.html %}
+</div>
 
 
 ### Get Started
