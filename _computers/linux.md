@@ -40,6 +40,9 @@ Here's a picture showing the differences between Windows/Mac and Linux, and how 
 ![OS Suite]({{ site.baseurl }}/img/articles/computers-linux/os-suite.svg "OS Suite")
 
 
+---
+
+
 ## Distributions
 
 As described above, Linux itself is not an OS. It doesn't contain the system software or user apps that let regular people use it.
@@ -66,6 +69,9 @@ Linux distributions can also be based on (or 'source' from) another distribution
 </div>
 
 
+---
+
+
 ## Packaging
 
 With Windows and Mac, you can't change the system software and packaged user apps. On the other hand, Linux is designed to let you do so. Similar to user apps, in Linux the system software is just made up of a collection of separate programs (any of which you can remove or replace with an alternative).
@@ -89,6 +95,9 @@ The package management system is an integral part of a Linux distribution, and t
 	<p>The main downside of rolling release distros is that there is a higher chance of them breaking while updating, since they update the core software used in your OS much more often than regular distros would. Regular distros claim to test updated packages more thoroughly before releasing them, to reduce the chance of breakages when someone updates their system.</p>
 	<p>There are upsides and downsides to either approach, but at this point rolling release distros are not as commonly-used as the standard release-based ones.</p>
 </div>
+
+
+---
 
 
 ## Overview

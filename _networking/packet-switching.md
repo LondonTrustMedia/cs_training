@@ -32,7 +32,7 @@ With the advent of telephones, this became an extremely expensive and unwieldy l
 
 Instead of having a dedicated copper line between phones, why not have a dedicated copper line between each phone and a single building. Inside that building, each phone line can come out at a plug, and then you can plug shorter copper wires between the plugs as appropriate in order to create a dedicated copper connection between those two phones.
 
-This sort of a system is known as [circuit switching](https://en.wikipedia.org/wiki/Circuit_switching), and was how the telephone system worked for a long while (and still works, in many areas).
+This sort of a system is known as [circuit switching](https://en.wikipedia.org/wiki/Circuit_switching), and was how the telephone system worked for a long while (and still does, in many areas).
 
 An example layout for this system is shown below.
 
@@ -58,6 +58,9 @@ In this example, computer B is communicating with computers D, H, and F. The hub
 Some of the upsides of packet switching are that it vastly simplifies communication between lots of hosts. In addition, anyone can talk to anyone else at any time – where circuit switching requires you to disconnect the old connection to create a new one, with packet switching everything flows through a single connection to the end machine.
 
 
+---
+
+
 ## RFCs and the IETF
 
 While creating the internet, the designers would send each other design notes, proposals, and specifications. They called these series of documents 'requests for comment', basically asking the other designers to give them feedback on their proposals.
@@ -77,6 +80,9 @@ Here are a few examples of RFCs if you're interested in them:
 * [RFC 3439](https://tools.ietf.org/html/rfc3439): Some Internet Architectural Guidelines and Philosophy
 
 The IETF (or the Internet Engineering Taskforce) is the group that manages the creation of new RFCs, and plays a large part in the creation of new internet technologies.
+
+
+---
 
 
 ## Overview

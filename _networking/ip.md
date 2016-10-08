@@ -23,11 +23,14 @@ Here is a simplified model of an IP packet:
 This diagram intentionally leaves out some details. For more in-depth information, feel free to look into it [here](http://www.networksorcery.com/enp/protocol/ip.htm).
 
 
+---
+
+
 ## IP Model
 
 When talking about the Internet Protocol, it can be useful to think of it in terms of layers.
 
-Here, we'll use the [IP model](https://en.wikipedia.org/wiki/Internet_protocol_suite). If you already understand this and want to dig deeper you can also look at the [OSI model](https://en.wikipedia.org/wiki/OSI_model) which is another useful way to look at IP.
+Here, we'll use the [IP model](https://en.wikipedia.org/wiki/Internet_protocol_suite). If you already understand this and want to dig deeper you can also look at the [OSI model](https://en.wikipedia.org/wiki/OSI_model), which is another useful way to look at IP.
 
 Here are the layers of the IP model:
 
@@ -44,6 +47,8 @@ This covers a rough view of how the internet works, from top to bottom. Let's ex
 This layer deals with the low-level sending of data inside a single network, as well as hardware and the communication mechanisms that go into play with it.
 
 For instance, this layer contains the technology behind wifi or the ethernet port on your computer. This layer can also contain things like ethernet cables, fibre-optics and other physical technologies used to transport internet traffic.
+
+For our needs, this layer isn't too important – we generally work from the Internet layer up.
 
 
 ### Internet
@@ -64,16 +69,27 @@ That is, how the data is packaged, and the following questions:
 * Does the data delivery always need to be reliable?
 * Do comprehensive error-correction mechanisms need to be in place for this data?
 
-This layer is where [UDP and TCP]({{ site.baseurl }}/networking/udpctp.html) live, and those protocols give application authors further control over their traffic and how it gets delivered. This section also deals with 'port numbers' (which let you run multiple connections to one server at the same time, such as multiple web browser tabs all going to the same site).
+This layer is where [UDP and TCP]({{ site.baseurl }}/networking/udptcp.html) live, and those protocols give application authors further control over their traffic and how it gets delivered. This section also deals with 'port numbers' (which let you run multiple connections to one server at the same time, such as multiple web browser tabs all going to the same site).
 
 
 ### Application
 
 Applications are built on top of the networking stack, to exchange data using IP. This is where things like your web browser, ftp, the `ping` command, as well as network helper services such as DNS live.
 
+Apps use a transport (typically UDP or TCP) to send data over the internet to other machines and services. They are built on top of the other layers which provide a simple, robust interface for sending data with.
 
 
+---
 
 
+## Overview
 
+* The basic unit of IP is a packet.
+* Packets contain a source and destination address, which are used to deliver it.
+* IP does not define any sort of error correction or resending data that failed to be delivered.
 
+---
+
+Here's a diagram of the IP model as described here, and the sort of services/protocols that fit at each level:
+
+![IP model]({{ site.baseurl }}/img/articles/networking-ip/ip-model.svg "IP model")
