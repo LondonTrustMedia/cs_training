@@ -5,7 +5,7 @@ title: "PIA T1/T2 Tech Training"
 
 <div class="hideprinted">
 	<img class="pagelogo" src="{{ site.baseurl }}/img/pia-logo.svg" title="Private Internet Access"/>
-	<h1>T1/T2 Technical Training</h1>
+	<h1 class="frontpage">T1/T2 Technical Training</h1>
 </div>
 
 <div class="disclaimer">

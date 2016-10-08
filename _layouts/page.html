@@ -3,13 +3,13 @@ layout: default
 ---
 
 <div class="page-header">
-    <h2>{% if page.display %}
+    <h1>{% if page.display %}
     		{{ page.display }}
     	{% else %}
     		{{ page.title }}
     	{% endif %}
         {% if page.subtitle %}<small>{{ page.subtitle }}</small>{% endif %}
-    </h2>
+    </h1>
 </div>
 
 {{ content }}

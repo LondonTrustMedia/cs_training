@@ -17,7 +17,7 @@ There's also a video version of this article here:
 ---
 
 
-### OS Fundamentals
+## OS Fundamentals
 
 At a very high level, Windows, Mac, and Linux-based operating systems are all split up in this sort of way:
 
@@ -40,7 +40,7 @@ Here's a picture showing the differences between Windows/Mac and Linux, and how 
 ![OS Suite]({{ site.baseurl }}/img/articles/computers-linux/os-suite.svg "OS Suite")
 
 
-### Distributions
+## Distributions
 
 As described above, Linux itself is not an OS. It doesn't contain the system software or user apps that let regular people use it.
 
@@ -66,7 +66,7 @@ Linux distributions can also be based on (or 'source' from) another distribution
 </div>
 
 
-### Packaging
+## Packaging
 
 With Windows and Mac, you can't change the system software and packaged user apps. On the other hand, Linux is designed to let you do so. Similar to user apps, in Linux the system software is just made up of a collection of separate programs (any of which you can remove or replace with an alternative).
 
@@ -91,7 +91,7 @@ The package management system is an integral part of a Linux distribution, and t
 </div>
 
 
-### Overview
+## Overview
 
 * Operating systems are made up of the kernel, system software, and bundled user apps.
 * Linux is just the kernel, whereas a distribution contains the kernel, system software and bundled user apps.
