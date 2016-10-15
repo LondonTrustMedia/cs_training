@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "PIA T1/T2 Tech Training"
+title: "PIA Tech Training"
 ---
 
 <div class="hideprinted">
 	<img class="pagelogo" src="{{ site.baseurl }}/img/pia-logo.svg" title="Private Internet Access"/>
-	<h1 class="frontpage">T1/T2 Technical Training</h1>
+	<h1 class="frontpage">Technical Training</h1>
 </div>
 
 <div class="disclaimer">
@@ -15,7 +15,7 @@ title: "PIA T1/T2 Tech Training"
 
 ## Get Started
 
-Welcome! This site contains information that's useful for T1 and T2 agents on the PIA Technical Support team to know.
+Welcome! This website contains training on a variety of technical topics, useful for those working with PIA and VPN technology.
 
 The tabs on the left link to specific sections/articles. If there's a video to go along with a specific article, it will be displayed at the start of that article.
 
