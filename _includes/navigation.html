@@ -5,11 +5,11 @@
 <div id="navlists">
 {% for collection in site.collections %}
 
-{% capture collection_index_url %}{% for page in collection.docs %}{% if page.is_index %}{% if page.incomplete %}{% else %}{{ page.url }}{% endif %}{% endif %}{% endfor %}{% endcapture %}
+{% capture collection_index_url %}{% for npage in collection.docs %}{% if npage.is_index %}{% if npage.incomplete %}{% else %}{{ npage.url }}{% endif %}{% endif %}{% endfor %}{% endcapture %}
 
 <ul class="nav nav-list section" data-order="{% if collection.order %}{{ collection.order }}{% else %}1{% endif %}">
-    {% for page in collection.docs %}
-        {% if page.is_index %}{% else %}
+    {% for npage in collection.docs %}
+        {% if npage.is_index %}{% else %}
         {% if forloop.first and collection.display %}
             <li class="nav-header">
                 {% if collection_index_url != "" %}
@@ -19,7 +19,7 @@
                 {% endif %}
             </li>
         {% endif %}
-        <li data-order="{% if page.order %}{{ page.order }}{% else %}1{% endif %}">{% if page.incomplete %}<span class="incomplete">{{ page.title }}</span>{% else %}<a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>{% endif %}</li>
+        <li data-order="{% if npage.order %}{{ npage.order }}{% else %}1{% endif %}">{% if npage.incomplete %}<span class="incomplete">{{ npage.title }}</span>{% else %}<a{% if page.url == npage.url %} class="current"{% endif %} href="{{ site.baseurl }}{{ npage.url }}">{{ npage.title }}</a>{% endif %}</li>
         {% endif %}
     {% endfor %}
     </ul>
