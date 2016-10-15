@@ -34,10 +34,7 @@ Here, we'll use the [IP model](https://en.wikipedia.org/wiki/Internet_protocol_s
 
 Here are the layers of the IP model:
 
-* Application.
-* Transport.
-* Internet.
-* Link.
+![IP model]({{ site.baseurl }}/img/articles/networking-ip/ip-model.svg "IP model")
 
 This covers a rough view of how the internet works, from top to bottom. Let's explain what each layer represents, starting at the bottom (hardware) and moving up to applications (such as Skype or Firefox).
 
@@ -87,9 +84,3 @@ Apps use a transport (typically UDP or TCP) to send data over the internet to ot
 * The basic unit of IP is a packet.
 * Packets contain a source and destination address, which are used to deliver it.
 * IP does not define any sort of error correction or resending data that failed to be delivered.
-
----
-
-Here's a diagram of the IP model as described here, and the sort of services/protocols that fit at each level:
-
-![IP model]({{ site.baseurl }}/img/articles/networking-ip/ip-model.svg "IP model")
