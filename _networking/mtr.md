@@ -2,6 +2,11 @@
 layout: page
 title: MTR Tests
 incomplete: true
-order: 8
+order: 7
 ---
-this is a test page
+
+What is an MTR test?
+
+How do I interpret an MTR test?
+
+What's the difference between doing an MTR test while not using the VPN, and while using the VPN? (feeds back into routing discussion)

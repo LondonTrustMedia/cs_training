@@ -2,6 +2,9 @@
 layout: page
 title: NAT
 incomplete: true
-order: 9
+order: 8
 ---
-this is a test page
+
+What does NAT let you do?
+
+How does NAT [PAT] work?

@@ -154,5 +154,5 @@ Now that we've gone through each of TCP's major features, let's take another loo
 
 * UDP and TCP are both built on top of IP, and include IP's packet header (technically, both UDP and TCP packets are contained within the IP packet's 'data' section).
 * UDP and TCP both use port numbers to differentiate services, and let multiple connections exist between two machines.
-* **UDP** is the much simpler, quicker, but less reliable transport protocol.
-* **TCP** is the more comprehensive, slightly slower, but reliable transport protocol.
+* **UDP** is the much simpler, faster, but unreliable transport protocol.
+* **TCP** is the more comprehensive, slower, but reliable transport protocol.

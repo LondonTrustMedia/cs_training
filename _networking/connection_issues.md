@@ -1,7 +1,12 @@
 ---
 layout: page
-title: Connection Issues
+title: Speed And Connection Issues
 incomplete: true
 order: 6
 ---
-this is a test page
+
+## Bad Routing
+
+## Latency
+
+## Packet Loss

@@ -4,4 +4,9 @@ title: Routing
 incomplete: true
 order: 5
 ---
-this is a test page
+
+## Home Routers
+
+## Internet Routing
+
+## What are 'hops'
