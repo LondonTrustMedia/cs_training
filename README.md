@@ -16,3 +16,11 @@ To convert videos to mkv/mp4, I recommend using [Handbreak](https://handbrake.fr
 2. Copy the videos folder into this repo as `./videos/`.
 3. `jekyll build`
 4. Your built site is in `./_site/`.
+
+
+## Development Instructions
+
+Same as above, but:
+
+3. `jekyll serve -w`
+4. Head to http://localhost:4000/ss/
