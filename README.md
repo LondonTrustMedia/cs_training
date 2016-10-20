@@ -5,6 +5,13 @@ This repo contains the primary package of technical training for PIA agents.
 This website is the sole property of London Trust Media. This confidential website contains trade secrets and proprietary information relating to Private Internet Access and London Trust Media. No use or disclosure of the information contained herein is permitted without the prior written consent of London Trust Media. All marks, trademarks and product names used in this document are the property of their respective owners.
 
 
+## SOURCE CODE HANDLING
+
+Source code for this site should **only** be handled by LTM. Don't give people outside LTM access to all of the source for this site.
+
+If necessary, you can give them the source for a specific article so they can make changes directly and send it back to you, but make them well aware of the disclaimer above that applies to all material in here.
+
+
 ## Converting Videos
 
 To convert videos to mkv/mp4, I recommend using [Handbreak](https://handbrake.fr). It's a free, open-source video converter that just works brilliantly.
