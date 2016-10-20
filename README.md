@@ -10,17 +10,23 @@ This website is the sole property of London Trust Media. This confidential websi
 To convert videos to mkv/mp4, I recommend using [Handbreak](https://handbrake.fr). It's a free, open-source video converter that just works brilliantly.
 
 
-## Build Instructions
+## Preparing
+
+So to get this repo ready (to start testing/building it), do this:
 
 1. Install [Jekyll](https://jekyllrb.com).
 2. Copy the videos folder into this repo as `./videos/`.
-3. `jekyll build`
-4. Your built site is in `./_site/`.
+
+And afterwards, do one of the following so you can actually use it.
 
 
-## Development Instructions
+### Build Instructions
 
-Same as above, but:
+1. `jekyll build`
+2. Your built site is in `./_site/`.
 
-3. `jekyll serve -w`
-4. Head to http://localhost:4000/ss/
+
+### Development Instructions
+
+1. `jekyll serve -w`
+2. Head to http://localhost:4000/ss/
