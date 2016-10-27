@@ -4,7 +4,6 @@ title: DNS
 display: DNS and Domain Names
 order: 4
 ---
-
 What is DNS, and how does it work? DNS stands for the Domain Name System, and is how your computer converts hostname (such as example.com) into IP addresses (such as 128.46.5.1).
 
 
