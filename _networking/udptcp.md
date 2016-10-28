@@ -158,3 +158,4 @@ Now that we've gone through each of TCP's major features, let's take another loo
 * UDP and TCP both use port numbers to differentiate services, and let multiple connections exist between two machines.
 * **UDP** is the much simpler, faster, but unreliable transport protocol.
 * **TCP** is the more comprehensive, slower, but reliable transport protocol.
+* UDP and TCP can be treated differently by ISPs. So even though technically UDP is faster, your ISP may only slow one or the other down, or only when they're over a specific port. That's why our app offers both UDP and TCP connections.
