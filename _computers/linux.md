@@ -96,6 +96,8 @@ The package management system is an integral part of a Linux distribution, and t
 	<p>There are upsides and downsides to either approach, but at this point rolling release distros are not as commonly-used as the standard release-based ones.</p>
 </div>
 
+In addition, each distribution also contains different packages by default. These differences (among other more in-depth ones) is the reason our app can work on some distributions, but may fail on others.
+
 
 ---
 
