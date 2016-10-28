@@ -29,7 +29,7 @@ Port numbers are used in both UDP and TCP and accomplish the same task. However,
 
 UDP is very simple. UDP contains the 'source port', the 'destination port', and basically nothing else.
 
-You can think of UDP like a paper airplane. Once you send a UDP packet, it might get to its destination or it might not. If there's an error along the way or it doesn't get delivered, UDP won't do any corrections or resend any data. If UDP packets arrive out-of-order, the application is expected to deal with these sort of issues.
+You can think of UDP like a paper airplane. Once you send a UDP packet, it might get to its destination or it might not. If there's an error along the way or it doesn't get delivered, UDP won't do any corrections or resend any data. If the data arrives out-of-order or some is missing, the application is expected to pick up the pieces and fix it.
 
 Let's take a look at a UDP packet:
 
@@ -39,14 +39,16 @@ Here, you can see the IP header (which contains addresses), source and destinati
 
 Since UDP doesn't need to do any sort of error correction, re-ordering packets or re-sending them, UDP does not need any further information. It simply contains the data, and then at the other side that data is given to the application.
 
-Because there's no overhead from those other sorts of features, UDP is typically used when speed is required. For instance, streaming video, video / voice chat, and gaming all commonly use UDP. In these cases, speed is prioritised above all else, and when necessary (i.e. in gaming), the application handles only the error-correction that it needs to.
+Because there's no overhead from those other sorts of features, UDP is typically used when speed is required over data integrity. For instance, streaming video, video / voice chat, and gaming all commonly use UDP. In these cases, speed is prioritised above all else. If you miss one microsecond of audio in a voice call, you don't want your program to waste three microseconds trying to re-send that block of data – it makes more sense to just get the newer data and ignore the issue.
 
 UDP also has no notion of a 'connection' built-in. Every UDP packet is considered, by UDP, to be separate to any other one. A connection in UDP is established and managed by the protocol using UDP, and not by UDP itself.
 
 
 ## TCP
 
-TCP is the more complex transport protocol in use today. TCP does error-correction, re-sends packets if they are lost along the way, and has the notion of a TCP connection.
+TCP is the more complex transport protocol in use today. TCP does error-correction, re-sends packets if they are lost along the way, and has the notion of a TCP connection. If the data arrives out-of-order or some is missing, the TCP protocol will fix it before it's sent to the application.
+
+Most programs out there including your web browser and email use TCP. Speed isn't as important as making sure the data is correct for them, so the slight slowdown is worth it.
 
 We'll go over each of the features provided by TCP one at a time, but here's what a TCP packet looks like for reference:
 
@@ -150,7 +152,7 @@ Now that we've gone through each of TCP's major features, let's take another loo
 ---
 
 
-## Overall
+## Overview
 
 * UDP and TCP are both built on top of IP, and include IP's packet header (technically, both UDP and TCP packets are contained within the IP packet's 'data' section).
 * UDP and TCP both use port numbers to differentiate services, and let multiple connections exist between two machines.
