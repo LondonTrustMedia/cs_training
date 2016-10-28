@@ -16,11 +16,7 @@ Packets contain the addresses of the computer that sent them (the source), as we
 
 Each packet also contains extra information to confirm that the packet is valid, and to make sure that packets can't loop forever in the internet.
 
-Here is a simplified model of an IP packet:
-
-![Rough IP Packet]({{ site.baseurl }}/img/articles/networking-ip/rough-packet-layout.svg "Rough IP Packet")
-
-This diagram intentionally leaves out some details. For more in-depth information, feel free to look into it [here](http://www.networksorcery.com/enp/protocol/ip.htm).
+We'll go over how a packet's structured after we've talked about the IP overview just below.
 
 
 ---
@@ -74,6 +70,23 @@ This layer is where [UDP and TCP]({{ site.baseurl }}/networking/udptcp.html) liv
 Applications are built on top of the networking stack, to exchange data using IP. This is where things like your web browser, ftp, the `ping` command, as well as network helper services such as DNS live.
 
 Apps use a transport (typically UDP or TCP) to send data over the internet to other machines and services. They are built on top of the other layers which provide a simple, robust interface for sending data with.
+
+
+---
+
+
+## Packet Structure
+
+Here is a simplified model of an IP packet, and what each part of it means:
+
+![Rough IP Packet]({{ site.baseurl }}/img/articles/networking-ip/rough-packet-layout.svg "Rough IP Packet")
+
+* The source address is the IP address of the computer the packet came from.
+* The destination address is the IP address of the computer the packet is being sent to.
+* The checksum is used to validate that the packet is correct and has been transmitted without issues.
+* The data portion contains the actual information being transmitted. In most cases, this contains the UDP/TCP header and data.
+
+This diagram intentionally leaves out some details. For a more complete look into what exactly packets contain, feel free to look into it [here](http://www.networksorcery.com/enp/protocol/ip.htm).
 
 
 ---
