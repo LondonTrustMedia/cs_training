@@ -3,7 +3,7 @@ layout: page
 title: Linux Core Concepts
 order: 3
 ---
-This article goes over core concepts that should help you better understand how Linux works underneath the hood.
+Here, we'll go over core concepts that should help you better understand how Linux works underneath the hood.
 
 <div class="video-notice">
 
