@@ -2,7 +2,7 @@
 layout: page
 title: Speed And Connection Issues
 incomplete: true
-order: 8
+order: 9
 ---
 
 ## Bad Routing

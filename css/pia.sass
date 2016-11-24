@@ -52,7 +52,6 @@ body
     color: #d54
 
 .advanced
-    //TODO: add hover CSS tooltop that says 'this is an advanced section', etc etc
     &::before
         display: block
         font-family: "Material Design Icons", "Helvetica Neue", Helvetica, Arial, sans-serif
@@ -65,6 +64,20 @@ body
     padding: 2rem 2.15rem 2rem 2.6rem
     border-radius: 3rem 0.35rem 0.35rem 3rem
     background: aliceblue
+    & p:last-child
+        margin-bottom: 0
+
+.note
+    &::before
+        display: block
+        content: "Note"
+        font-weight: bold
+        margin-bottom: 0.05rem
+
+    margin: 2rem 0
+    padding: 2rem 2.15rem
+    border-radius: 3rem
+    background: #e9efff
     & p:last-child
         margin-bottom: 0
 
@@ -96,6 +109,9 @@ p:last-child
 pre, .highlight, tt, code, pre code
     background: #ffb
     border-radius: 0.2rem
+
+emph
+    font-style: italic
 
 @media screen
     .hidescreen, .hideboth
