@@ -168,16 +168,9 @@ This is a complex topic, but there's also a number system called "base 16", or h
 
 The useful thing with base 16 is that each column can represent 16 separate values. Similarly, four columns of binary can also represent 16 separate values. Because of this, hexidecimal makes it easy to represent four digits of binary (and as such, makes it super simple to convert between them).
 
-Here's an example chart of values represented in Binary, Hex, and Decimal, which may be useful some time later:
+Here's a chart of values represented in Binary, Hex, and Decimal, which can be useful when converting between them:
 
-          B     H    D      |        B     H    D
-        0000    0    0      |      1000    8    8
-        0001    1    1      |      1001    9    9
-        0010    2    2      |      1010    A    10
-        0100    4    4      |      1100    C    12
-        0101    5    5      |      1101    D    13
-        0110    6    6      |      1110    E    14
-        0111    7    7      |      1111    F    15
+![Binary Chart]({{ site.baseurl }}/img/articles/networking-binary/values-chart.svg "Binary Chart")
 
 
 ## Overall
