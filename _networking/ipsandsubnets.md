@@ -109,7 +109,7 @@ Especially as you start getting into more complex setups, these sort of not-enti
 	<p><strong>CIDR</strong></p>
     <p>The only real information that a subnet mask conveys are how many network bits there are. The subnet mask <tt>255.0.0.0</tt> conveys 8 network bits, <tt>255.255.255.0</tt> conveys 24 network bits, and so on.</p>
     <p>Because this is the only info the mask conveys, there is a more compact way to specify it. Particularly as you get further into networking, this notation is fairly commonly-used.</p>
-    <p>To do this, at the end of a network address simply put a forwardslash, then the number of network bits that exist. For instance:</p>
+    <p>To use CIDR notation, at the end of a network address simply put a forward slash and the number of network bits that exist. For instance:</p>
     <p><tt>192.168.0.0/24</tt></p>
     <p>This example means that there are 24 network bits, or that it has the subnet mask <tt>255.255.255.0</tt>.</p>
     <p>This is just an alternate to specifying the IP address and subnet mask (and is the only method of specifying this info for IPv6 addresses)</p>
