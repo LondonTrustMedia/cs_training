@@ -49,11 +49,49 @@ Where there's a `1` in the binary subnet mask, this means that the above digit i
 
 The more `1`'s there are in the subnet mask, the more separate networks there are, and the fewer individual hosts or machines there are in each of those networks. For instance, for an IP / subnet like this one, there are three bits for host information:
 
+    == Decimal ==
+     IP address:   5. 23.152. 22
+    Subnet mask: 255.255.255.248
+
     == Binary ==
      IP address: 00000101 00010111 10011000 00010110
     Subnet mask: 11111111 11111111 11111111 11111000
 
-This means that in this network, there are eight networks available.
+There are three binary digits available for hosts with this subnet mask. This means that in this network, there are eight individual IP addresses available.
+
+---
+
+Let's go back to that first example and work out exactly what it means. 
+
+    == Decimal ==
+     IP address:   5. 23.152. 22
+    Subnet mask: 255.255.255.000
+
+    == Binary ==
+     IP address: 00000101 00010111 10011000 00010110
+    Subnet mask: 11111111 11111111 11111111 00000000
+
+There are eight bits available for host information. This means that there are 256 possible addresses (i.e. from `00000000` to `11111111`, or 0 to 255).
+
+However, the first and last address in every network is treated as a special address. In this example, that's `5.23.152.0` and `5.23.152.255`.
+
+The first address in a network represents what's called the _network address_. This is a special address that represents the IP network as a whole, and is not available for actual clients to use.
+
+The last address in a network represents what's called the _broadcast address_. This address is special in that every packet sent to this address is sent to everyone on the network (or _broadcasted_). As such, it's not available for actual clients to use. 
+
+Taking out those two special addresses, that means there are 254 addresses that can actually be used on the network, from `5.23.152.1` and `5.23.152.254`.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
