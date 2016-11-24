@@ -49,6 +49,14 @@ The main threats for our users include:
 
 These are the sorts of things we need to worry about, and can really affect whether people use our service:
 
+* The security of our network or apps being subverted.
 * Our gateway IPs being blocked by services.
 * Virus and other security detections against our software.
 * In general, our users' trust in us eroding. 
+
+
+## Overview
+
+* VPNs protect users by:
+    * Changing their public IP address so the remote end can't get it.
+    * Encrypting their traffic so that they can't be monitored and or censored.
