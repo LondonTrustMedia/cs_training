@@ -96,6 +96,19 @@ Let's count up as far as we can:
 Computers use binary because it meshes well with how they work deep down. Computers are based on electrical signals, and those signals can either be high (`1`), or low (`0`). Because of this, using a number system with only two values for each column makes sense.
 
 
+### Bits and Bytes
+
+Sometimes when using binary, you'll see the term "bits". Bit simply stands for binary digit, and it used as a shorthand when talking about computers in particular. Up until now, our counter has used three bits, and four/eight bits are typical sizes used a lot when working with computers.
+
+Collections of different numbers of bits can also have names. For instance, eight bits are called a byte, and four bits are called a nibble. As an example:
+
+    bit    =  0
+    nibble =  0000
+    byte   =  0000 0000
+
+When working with binary, bytes are sometimes written as groups of four bits. This just makes it easier to read, and easy to convert to other number systems (as you'll see later).
+
+
 ## Base 10 vs Base 2
 
 With base 10 (decimal), if we count all the way up, 3 digits lets us represent these values:
