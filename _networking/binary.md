@@ -34,7 +34,7 @@ To count up, we increment (go up by one each time) from `0` to `1`, `1` to `2`, 
     008     - eight
     009     - nine
 
-However, there are no digits after `9`. To continue counting up to ten, we need to increment the next digit and reset the rightmost one.
+However, there are no digits after `9`. To continue counting up to ten, we need to increment the next column and reset the rightmost one.
 
 Let's count up from 9:
 
@@ -162,11 +162,11 @@ Try going through some of these examples on a piece of paper, to see whether you
 
 ## Base 16
 
-This is a complex topic, but there's also a number system called "base 16", or hexidecimal. It uses these 16 digits in each column:
+There is also a similar number system that's often used in computing -- "base 16", or hexidecimal. It uses these 16 digits:
 
     0 1 2 3 4 5 6 7 8 9 A B C D E F
 
-The useful thing with base 16 is that each column can represent 16 separate values. Similarly, four columns of binary can also represent 16 separate values. Because of this, hexidecimal makes it easy to represent four digits of binary (and as such, makes it super simple to convert between them).
+The useful thing with base 16 is that each column can represent 16 separate values. Similarly, four columns of binary can also represent 16 separate values. Because of this, hexidecimal can easily -- and very compactly -- represent binary digits.
 
 Here's a chart of values represented in Binary, Hex, and Decimal, which can be useful when converting between them:
 
