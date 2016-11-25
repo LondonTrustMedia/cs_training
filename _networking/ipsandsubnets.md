@@ -112,7 +112,8 @@ Especially as you start getting into more complex setups, these sort of not-enti
     <p>To use CIDR notation, at the end of a network address simply put a forward slash and the number of network bits that exist. For instance:</p>
     <p><tt>192.168.0.0/24</tt></p>
     <p>This example means that there are 24 network bits, or that it has the subnet mask <tt>255.255.255.0</tt>.</p>
-    <p>This is just an alternate to specifying the IP address and subnet mask (and is the only method of specifying this info for IPv6 addresses)</p>
+    <p>This is just an alternate to specifying the IP address and subnet mask (and is the only method of specifying this info for IPv6 addresses).</p>
+    <p>Also, you may sometimes hear people talking about "slash 8" or "slash 24" networks -- those are simply referring to the length of the subnet mask in CIDR notation.</p>
 </div>
 
 
