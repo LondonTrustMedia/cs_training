@@ -53,7 +53,7 @@ Here's a simple example of a packet-switched network, and how communication work
 
 ![Packet Switching]({{ site.baseurl }}/img/articles/networking-packets/packet-switching.svg "Packet Switching")
 
-In this example, computer B is communicating with computers D, H, and F. The hub receives each piece of data separately, checks to see who it's for, and then sends it to the right computer.
+In this example, computer B is communicating with computers D, H, and F. The central hub receives each piece of data separately, checks to see who it's for, and then sends it to the right computer.
 
 Some of the upsides of packet switching are that it vastly simplifies communication between lots of hosts. In addition, anyone can talk to anyone else at any time – where circuit switching requires you to disconnect the old connection to create a new one, with packet switching everything flows through a single connection to the end machine.
 
