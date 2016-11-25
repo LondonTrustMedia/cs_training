@@ -6,9 +6,9 @@ order: 7
 Simply put, switching is what happens inside of a network. Whenever packets are exchanged between two devices on the same network, they are exchanged using switching. When packets are exchanged between devices on different networks, it's called routing (but we won't deal with that here).
 
 
-## Special Devices
+## Networking Devices
 
-There are several special devices inside of a network. Here's a diagram, and we'll go through what each of these devices does:
+There are several special networking devices inside of a network. Here's a diagram, and we'll go through what each of these devices does:
 
 ![Network]({{ site.baseurl }}/img/articles/networking-switching/network.svg "Network")
 
@@ -18,7 +18,7 @@ There are several special devices inside of a network. Here's a diagram, and we'
 Network device which takes incoming packets from one port, and puts them out the appropriate ports to reach their destination.
 
 
-### Gateway
+### Gateway Router
 
 Simply put, the _gateway_ is the device which can talk to places that are outside this network. In other words, if a computer wants to send a packet to an IP address that isn't on the same network, it'll send it to the gateway instead (and the gateway will send it where it needs to go from there).
 
@@ -118,20 +118,81 @@ The switch sees the incoming packet with the destination MAC address `5b:3a`. It
 
 If the switch doesn't recognise the destination MAC address, it'll just send it out everywhere (similar to a hub) until it learns which port that address is behind.
 
+Since the sending is very directed with switches, messages will only be sent through the switches and to the computers that need to get it, rather than everyone on the same network.
+
 With hubs, we talked about collision domains. Let's show a quick example of that same network above but with switches, and the resulting collision domains:
 
 ![Switch Collision Domains]({{ site.baseurl }}/img/articles/networking-switching/switch-collision-domains.svg "Switch Collision Domains")
 
-In this topology (network layout) there's much less of a chance for packet collisions, they will not nearly affect as many computers, and as a result the network as a whole can be much faster.
+In this topology (network layout) there's one collision domain per link. This means a much lower chance of packet collisions, and they do happen they won't affect nearly as many computers, and as a result the network as a whole can be much faster.
 
+
+## Sending traffic
+
+There are two different places that devices will want to send data:
+
+* Inside the network.
+* Outside the network.
+
+Let's go through how devices send packets to each of those places.
+
+
+### Sending traffic inside the network
+
+When sending traffic inside the network, you can either send it to a specific device, or to everyone in a broadcast.
+
+To send a packet to a specific other machine, you need their MAC (hardware) address.
+
+However, to start off with you don't know the MAC address of any other machines. In order to figure out the MAC address of a given machine from their IP, your computer sends out a broadcast essentially asking _"Who does IP x.x.x.x belong to?"_. The machine with that IP then responds with a packet -- and that reply contains their MAC address. This is also known as an "ARP Request".
+
+Once your machine has the MAC address of the machine it wants to send data to, it simply sends packets out with that machine in the "Destination MAC" field.
+
+Computers can also send messages to everyone as a broadcast. There are certain situations where this is needed, for instance:
+
+* Contacting the DHCP server after first being plugged into the network (so that it can be given an IP address).
+* Discovering the MAC address of a machine it only knows the IP of.
+
+If a machine needs to broadcast to all clients on the network, it will send a packet to the MAC address `ff:ff:ff:ff:ff:ff` (or in binary, all `1`'s).
+
+
+### Sending traffic outside the network
+
+If a machine needs to send traffic to an IP address that's outside its current network, it can't just send an ARP request and find out -- this is where the gateway comes in.
+
+When a device needs to send a packet outside its' current network, what it does is:
+
+* Fill out the destination IP with the remote IP it wants to contact.
+* In the "Destination MAC" field, put the MAC address of its' gateway.
+
+This means that the gateway will receive this packet. Once the gateway gets this packet, it will notice that it's intended for outside the network and pass it to other routers outside the current network, sending it off towards its destination.
 
 ## Connecting to the network
 
+Upon first connecting to the network, a machine:
+
+1. Sends a DHCP request (as a broadcast).
+2. Waits for the DHCP server on the network to give it an IP address, gateway, and DNS details.
+
+The DHCP server keeps track of which IP addresses are in use on a network, and which ones are free. When this server gets a new request, it replies with a new IP address for the machine to use, as well as the IP addresses of both the gateway and DNS servers to use. The client can, of course, ignore the DNS servers given to it and use custom ones instead.
+
+Once the machine receives its' IP address, gateway and DNS servers, it has everything it needs to connect and successfully use the network!
 
 
+## Overview
 
+There are several roles in a network:
 
+* **Gateway Router**: Acts as the gateway to other networks (such as the internet).
+* **DHCP Server**: Keeps track of the IP addresses in use, and allocates new IP addresses when requests come in.
+* **DNS Server**: Given a name, returns the IP address associated with it.
+* **Switch**: Given a packet on one of its' ports, sends it out towards the destination.
 
+As well as some concepts:
 
+* On a hub, the entire hub is a single collision domain.
+* On a switch, each port is a separate collision domain.
 
+And some terms:
 
+* _Unicast traffic_ is traffic going from a single machine to a single machine.
+* _Broadcast traffic_ is traffic going from a single machine to the entire network.
