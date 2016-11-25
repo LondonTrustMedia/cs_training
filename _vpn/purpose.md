@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Purpose
-display: VPN Purposes
+title: Purpose and Threats
+display: VPN Purpose and Threats
 order: 1
 ---
 Here, we'll go over some of the reasons that VPNs are used, as well as issues that come up for us and for our users themselves.
@@ -18,7 +18,7 @@ Here's a few examples of local adversaries:
 * People inside your home network.
 * People on your business network (including I.T. staff and admins).
 * Your ISP (since they have the ability to monitor and modify any of your internet traffic).
-* People or agencies on your ISP's network.
+* People or agencies on your ISP's network (such as hackers).
 
 
 ### Why should I use a VPN service?
@@ -57,6 +57,12 @@ These are the sorts of things we need to worry about, and can really affect whet
 
 ## Overview
 
-* VPNs protect users by:
-    * Changing their public IP address so the remote end can't get it.
-    * Encrypting their traffic so that they can't be monitored and or censored.
+VPNs protect users by:
+
+* Changing their public IP address so the remote end can't get it.
+* Encrypting their traffic so that they can't be monitored and or censored.
+
+The main issues we face as a VPN provider are:
+
+* Our security being compromised.
+* Users not trusting us.
