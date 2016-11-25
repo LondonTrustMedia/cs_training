@@ -32,7 +32,7 @@ With the advent of telephones, this became an extremely expensive and unwieldy l
 
 Instead of having a dedicated copper line between phones, why not have a dedicated copper line between each phone and a single building. Inside that building, each phone line can come out at a plug, and then you can plug shorter copper wires between the plugs as appropriate in order to create a dedicated copper connection between those two phones.
 
-This sort of a system is known as [circuit switching](https://en.wikipedia.org/wiki/Circuit_switching), and was how the telephone system worked for a long while (and still does, in many areas).
+This sort of a system is known as [circuit switching](https://en.wikipedia.org/wiki/Circuit_switching), and was how the telephone system worked for a long while (and still does, in many areas). Originally there were human _operators_ connecting those plugs together, but these days there are electronic systems that swap and switch the lines as appropriate.
 
 An example layout for this system is shown below.
 
