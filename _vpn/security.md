@@ -2,6 +2,7 @@
 layout: page
 title: Security
 display: VPN Security
+incomplete: true
 order: 2
 ---
 There are many different parts that make up the security of VPNs. This article is essentially just a general overview of the various things that are good to understand to have an in-depth view of how VPNs provide the security they do. 
