@@ -14,12 +14,16 @@ Sometimes, specific links are slow. Whether it goes over a satellite connection,
 
 This issue is called having _high latency_, and results in a connection that looks slower than usual.
 
+![Latency]({{ site.baseurl }}/img/articles/networking-connections/latency.svg "Latency")
+
 
 ## Packet Loss
 
 Similarly, certain connections can be low-quality. Perhaps the cable connecting the two sides together isn't entirely plugged in, or has been bent one too many times, and now 10% of the packets that go through it end up corrupted (and similarly, end up getting dropped). Sometimes that connection is simply overtaxed and can't transmit all the data being pushed to it -- and coincidentally drops the incoming packets instead.
 
 This issue is called _packet loss_, and results in a connection that looks slow and in some cases simply can't connect at all.
+
+![Bad Link]({{ site.baseurl }}/img/articles/networking-connections/packet-loss.svg "Bad Link")
 
 
 ## Bad Routing
@@ -35,12 +39,16 @@ This is a specific issue that occurs when the routing algorithm is simply confus
 
 The result of this issue is generally just packets getting dropped and delivery issues. This issue doesn't happen too often, but when it does it can prove fairly irritating.
 
+![Routing Loop]({{ site.baseurl }}/img/articles/networking-connections/routing-loop.svg "Routing Loop")
+
 
 ### Bad TTL
 
 The TTL controls how many hops a packet can go over before it's dropped. Usually, the default maximum of 64 hops is enough -- however, there are some very weird networks out there with very strange routing. Occasionally either the default maximum isn't enough to reach specific areas, or for some reason a device is using a value below the default.
 
 The good thing here is that the fix is simply manually increasing the TTL that your device uses on outgoing packets. Generally configurable somewhere, if you look hard enough.
+
+![Bad TTL]({{ site.baseurl }}/img/articles/networking-connections/bad-ttl.svg "Bad TTL")
 
 
 ## Bad MTU
