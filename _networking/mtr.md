@@ -119,7 +119,7 @@ Let's take a look at an example MTR command:
     13. core1.cpm.edgecastcdn.net                              0.0%   130  188.3 188.5 173.9 252.9  12.1
     14. 93.184.216.34                                          0.8%   130  184.9 184.9 175.6 211.8   4.9
 
-Here, we ssee the same information that we found in the traceroute above. However, we can also see:
+Here, we see the same information that we found in the traceroute above. However, we can also see:
 
 * How many packets were sent (in the **Snt** column).
 * How many packets failed to return as a percentage (in the **Loss%** column).
