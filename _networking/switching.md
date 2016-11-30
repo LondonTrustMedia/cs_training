@@ -59,7 +59,7 @@ The normal name used for this hardware address is a MAC address. In other words,
 
 <div class="advanced">
 	<p><strong>MAC addresses</strong></p>
-    <p>A MAC address is represented by 12 hexidecimal digits, usually split into groups of two. For example, something like `af:42:7b:c3:d4:19`</p>
+    <p>A MAC address is represented by 12 hexidecimal digits, usually split into groups of two. For example, something like <tt>af:42:7b:c3:d4:19</tt></p>
     <p>In the examples here we'll be using a shortened 4-digit version, both to simplify our diagrams and prevent the explanations from getting bogged-down.</p>
 </div>
 
