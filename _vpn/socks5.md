@@ -2,6 +2,6 @@
 layout: page
 title: SOCKS Proxy
 incomplete: true
-order: 6
+order: 7
 ---
 this is a test page
