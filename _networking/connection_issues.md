@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Speed And Connection Issues
+title: Speed and Connection Issues
 order: 9
 ---
 When using networks, particularly across the internet, there are many issues that can affect the speed and quality of connections. Among the main issues are high latency, high packet loss, and other similar troubles.
