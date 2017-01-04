@@ -13,7 +13,7 @@ title: "PIA Tech Training"
 </div>
 
 
-## Get Started
+## Welcome!
 
 Welcome! This website contains training on a variety of technical topics, useful for those working with PIA and VPN technology.
 
@@ -32,3 +32,24 @@ There are training classes run with this material, but you can also visit this s
 You may find issues with this site, the linked videos, or the content on here. Stuff may be unclear, there may be spelling mistakes or just information that's plain wrong.
 
 If you do see any issues like this, please reach out to the technical support managers (or your supervisor) so that these issues can be corrected!
+
+
+## Getting Started
+
+There's a lot of info on this site that cover a bunch of different areas. On the left you can see the navigation bar, which links to every section and article.
+
+You can jump into any article that catches your eye! However, here are the completed sections and articles you may wish to look at:
+
+* [Linux Core Concepts]({{site.baseurl}}/computers/linux.html)
+* [I.T. Networking]({{site.baseurl}}/networking/index.html)
+
+To get an overview of a section, simply click the name of the section on the left.
+
+
+
+
+
+
+
+
+

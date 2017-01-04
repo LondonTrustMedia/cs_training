@@ -18,6 +18,8 @@ These are the core, foundational things that you should have a decent working kn
 2. [IP (Internet Protocol)]({{site.baseurl}}/networking/ip.html).
 3. [UDP and TCP]({{site.baseurl}}/networking/udptcp.html).
 4. [DNS]({{site.baseurl}}/networking/dns.html).
+5. [Speed and Connection Issues]({{site.baseurl}}/networking/connection_issues.html).
+6. [MTR Tests]({{site.baseurl}}/networking/mtr.html).
 
 These are ares that help you understand how VPN technology itself works, so you should make sure to study up on these (and let us know if you want some additional training around them).
 
@@ -26,8 +28,10 @@ These are ares that help you understand how VPN technology itself works, so you 
 
 These areas are also useful to know, and should help you quite a bit. They do draw on other knowledge and other articles, but hopefully you should be able to go through them without too much trouble regardless.
 
-1. [Speed and Connection Issues]({{site.baseurl}}/networking/connection_issues.html).
-2. [MTR Tests]({{site.baseurl}}/networking/mtr.html).
+1. [Binary and Number Systems]({{site.baseurl}}/networking/binary.html).
+2. [IPs and Subnets]({{site.baseurl}}/networking/ipsandsubnets.html).
+3. [Switching]({{site.baseurl}}/networking/switching.html).
+4. [Routing]({{site.baseurl}}/networking/routing.html).
 
 If you run into any issues with these, please let us know and we can adjust our training to be more useful!
 
@@ -36,11 +40,7 @@ If you run into any issues with these, please let us know and we can adjust our 
 
 These can help you more fully understand how other areas work. For instance, knowing how Switching and Routing works helps immensely when understanding some of the more complex speed/connection issues we talk about. You should look at these, see what you can pick up and how far you can go through them.
 
-1. [Binary and Number Systems]({{site.baseurl}}/networking/binary.html).
-2. [IPs and Subnets]({{site.baseurl}}/networking/ipsandsubnets.html).
-3. [Switching]({{site.baseurl}}/networking/switching.html).
-4. [Routing]({{site.baseurl}}/networking/routing.html).
-5. [NAT]({{site.baseurl}}/networking/nat.html).
+1. [NAT]({{site.baseurl}}/networking/nat.html).
 
 These extra-credit sections are strange most of them help you understand those 'good-to-know' articles and areas above. I'd recommend digging into them and seeing how far you can get. If you need to come back to them later, you can always skip back and forth through the sections to get a more complete understanding of it all.
 
