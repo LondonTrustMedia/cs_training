@@ -1,9 +1,11 @@
 ---
 layout: page
-title: Secure Communications
+title: Secure Connections
 order: 2
 ---
-At their core, VPNs provide a secure connection that two machines can communicate over. That raises the question, what is a secure connection in the first place?
+Secure connections are commonly used when talking about computer security. And specifically, VPNs are designed to open up a secure connection between the gateway and the end user (for all the VPN traffic to go through).
+
+Here, we go through what a secure connection is, how it works, and the attacks that a properly secured connection prevents.
 
 Generally, secure connections should be:
 
@@ -51,18 +53,24 @@ Since the data isn't protected in any way, Eve can see everything being sent ove
 
 The data needs to be unmodifiable. That is, if it's modified in transit, each end must know that it's been modified and be able to throw out the data as necessary.
 
-Here's an example of Eve modifying data in transit, and it being (correctly) detected:
+Here's an example of Eve changing the recipient of a money transfer and it (correctly) being detected:
 
 ![Verified Message]({{ site.baseurl }}/img/articles/vpn-security/verified.svg "Verified Message")
 
-Eve replaces the existing transaction with a new one that she's made. However, bank is able to detect the attempt, and correctly not allow it to go through.
+Eve replaces Bob's account with herself in the money transfer, to try to get the money transferred to her own account instead of Bob's. However, the verification code no longer matches and the bank is able to detect the tampering.
 
 In this example, the bank is not able to detect message tampering:
 
 ![Tampered Message]({{ site.baseurl }}/img/articles/vpn-security/tampered.svg "Tampered Message")
 
-And so, Eve is able to submit a fradulent transaction.
+Because there is no verification that the message was sent correctly, unmodified, Eve is able to trick the bank into sending money to her own account.
 
 ## Overview
 
-With all these properties, communications can be safe and secure.
+A communication channel can be secure if it has:
+
+- **Authentication**: Both sides can be sure of who they're talking to.
+- **Confidentiality**: Nobody can spy and discover what's being said in the middle.
+- **Integrity**: Nobody can replace, replay, or tamper with messages in the middle.
+
+If any of these properties are missing, it's generally not a secured connection. This can be useful to know, as certain (generally older) VPN protocols do lack these features.

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Encryption
+incomplete: true
 order: 3
 ---
 The last article went over the properties that make a secure connection. Encryption is used to fulfil some of those properties, and here we'll go over the more in-depth details.
