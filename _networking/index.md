@@ -53,4 +53,4 @@ Hopefully, this gives you a better idea of how you can go through the training h
 
 The important thing to know is: You can take it one step at a time. You can read one section, dig into that for a while and make sure you understand it before moving on to the next. If you run into troubles, feel free to talk to us -- we're glad to help you learn, understand, or simply review any areas you have trouble with.
 
-And as always, if there are any issues with our training or you have suggestions, feel free to reach out to Darla and myself (doaks) anytime.
+And as always, if there are any issues with our training or you have suggestions, feel free to reach out to myself (doaks) anytime.
