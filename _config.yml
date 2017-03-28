@@ -23,22 +23,26 @@ collections:
     output: true
     display: Computers
     order: 1
+  troubleshooting:
+    output: true
+    display: Troubleshooting
+    order: 2
   networking:
     output: true
     display: Networking
-    order: 2
+    order: 3
   vpn:
     output: true
     display: VPNs
-    order: 3
+    order: 4
   desktopapp:
     output: true
     display: Desktop App
-    order: 4
+    order: 5
   mobileapps:
     output: true
     display: Mobile Apps
-    order: 5
+    order: 6
 
 # Keep as an empty string if served up at the root. If served up at a specific
 # path (e.g. on GitHub pages) leave off the trailing slash, e.g. /my-project

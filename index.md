@@ -41,7 +41,8 @@ There's a lot of info on this site that cover a bunch of different areas. On the
 You can jump into any article that catches your eye! However, here are the completed sections and articles you may wish to look at:
 
 * [Linux Core Concepts]({{site.baseurl}}/computers/linux.html)
-* [I.T. Networking]({{site.baseurl}}/networking/index.html)
+* [Troubleshooting]({{site.baseurl}}/troubleshooting/index.html)
+* [Networking]({{site.baseurl}}/networking/index.html)
 
 To get an overview of a section, simply click the name of the section on the left.
 
