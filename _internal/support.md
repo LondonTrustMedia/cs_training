@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Android App
+title: Support Tool
 incomplete: true
 order: 1
 ---
-example page
+this is a test page

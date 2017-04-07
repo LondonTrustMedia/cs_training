@@ -1,5 +1,5 @@
 # Site title and subtitle. This is used in _includes/header.html
-title: 'Technical Training'
+title: 'Support'
 subtitle: ''
 
 # if you wish to integrate disqus on pages set your shortname here
@@ -19,34 +19,31 @@ codeurl: ''
 
 # Default categories (in order) to appear in the navigation
 collections:
-  computers:
+  intro:
     output: true
-    display: Computers
+    no_header: true
+    display: Getting Started
     order: 1
-  troubleshooting:
+  services:
     output: true
-    display: Troubleshooting
+    display: Services
     order: 2
-  networking:
+  internal:
     output: true
-    display: Networking
+    display: Internal Pages
     order: 3
-  vpn:
+  cs:
     output: true
-    display: VPNs
+    display: Customer Service
     order: 4
-  desktopapp:
+  specifics:
     output: true
-    display: Desktop App
+    display: Specific Training
     order: 5
-  mobileapps:
-    output: true
-    display: Mobile Apps
-    order: 6
 
 # Keep as an empty string if served up at the root. If served up at a specific
 # path (e.g. on GitHub pages) leave off the trailing slash, e.g. /my-project
-baseurl: '/ss'
+baseurl: '/support'
 
 # Dates are not included in permalinks
 permalink: none

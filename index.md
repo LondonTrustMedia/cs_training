@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "PIA Tech Training"
+title: "PIA Support"
 ---
 
 <div class="hideprinted">
 	<img class="pagelogo" src="{{ site.baseurl }}/img/pia-logo.svg" title="Private Internet Access"/>
-	<h1 class="frontpage">Technical Training</h1>
+	<h1 class="frontpage">Support</h1>
 </div>
 
 <div class="disclaimer">

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Debug Logs
+title: Fraud Tool
 incomplete: true
-order: 3
+order: 2
 ---
 this is a test page

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Fedora
+title: Approaching a Query
 incomplete: true
-order: 5
+order: 1
 ---
 this is a test page

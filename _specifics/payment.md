@@ -1,8 +1,7 @@
 ---
 layout: page
-title: Overview
-display: Desktop App Overview
+title: Payment
 incomplete: true
-order: 1
+order: 3
 ---
 this is a test page

@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Protocol Overview
-display: VPN Protocol Overview
+title: LastPass
 incomplete: true
 order: 3
 ---

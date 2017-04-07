@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Architecture
-display: Desktop App Architecture
+title: Account
 incomplete: true
 order: 2
 ---

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Windows
+title: Slack
 incomplete: true
 order: 1
 ---

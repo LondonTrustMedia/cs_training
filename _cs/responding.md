@@ -1,7 +1,7 @@
 ---
 layout: page
-title: SOCKS Proxy
+title: Writing a Response
 incomplete: true
-order: 7
+order: 1
 ---
 this is a test page

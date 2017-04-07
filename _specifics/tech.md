@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Mac OSX
+title: Tech
 incomplete: true
-order: 2
+order: 1
 ---
 this is a test page
