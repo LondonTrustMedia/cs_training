@@ -9,7 +9,7 @@
 
 <ul class="nav nav-list section" data-order="{% if collection.order %}{{ collection.order }}{% else %}1{% endif %}">
     {% for npage in collection.docs %}
-        {% if forloop.first and collection.display %}
+        {% if forloop.first and collection.display %}{% if collection.no_header %}{% else %}
             <li class="nav-header">
                 {% if collection_index_url != "" %}
                     <a href="{{ collection_index_url }}">{{ collection.display }}</a>
@@ -17,9 +17,9 @@
                     <span>{{ collection.display }}</span>
                 {% endif %}
             </li>
-        {% endif %}
+        {% endif %}{% endif %}
         {% if npage.is_index %}
-        <li data-order="0"><a{% if page.url == npage.url %} class="current"{% endif %} href="{{ collection_index_url }}">Introduction</a></li>
+        <li data-order="0"><a{% if page.url == npage.url %} class="current"{% endif %} href="{{ collection_index_url }}">{% if npage.index_name %}{{ npage.index_name }}{% else %}Introduction{% endif %}</a></li>
         {% else %}
         <li data-order="{% if npage.order %}{{ npage.order }}{% else %}1{% endif %}">{% if npage.incomplete %}<span class="incomplete">{{ npage.title }}</span>{% else %}<a{% if page.url == npage.url %} class="current"{% endif %} href="{{ site.baseurl }}{{ npage.url }}">{{ npage.title }}</a>{% endif %}</li>
         {% endif %}
