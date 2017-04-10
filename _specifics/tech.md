@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tech
-incomplete: true
+external_link: "/support/tech/"
 order: 1
 ---
-this is a test page
+This is an example page to redirect to the Tech site.

@@ -24,22 +24,26 @@ collections:
     no_header: true
     display: Getting Started
     order: 1
+  teams:
+    output: true
+    display: Teams
+    order: 2
   services:
     output: true
     display: Services
-    order: 2
+    order: 3
   internal:
     output: true
     display: Internal Pages
-    order: 3
+    order: 4
   cs:
     output: true
     display: Customer Service
-    order: 4
+    order: 5
   specifics:
     output: true
     display: Specific Training
-    order: 5
+    order: 6
 
 # Keep as an empty string if served up at the root. If served up at a specific
 # path (e.g. on GitHub pages) leave off the trailing slash, e.g. /my-project
