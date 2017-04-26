@@ -3,16 +3,11 @@ layout: page
 title: Teams
 is_index: true
 ---
-There are a number of different teams in support that handle different areas, each with their own roles and responsibilities.
-
-This should give you a rough overview to how the teams are laid out.
-
-
-## Overview
+There are a number of different teams in support that handle different areas, each with their own roles and responsibilities. This should help give you an understanding to how our teams are laid out.
 
 As T1, you should have a reasonably strong understanding of tech in general, generic troubleshooting, and how to deal with account/billing tickets. Being able to use Windows, Mac and Linux comfortably is useful, since our customers use all sorts of systems.
 
-As T2, you should have the above, as well as some more in-depth knowledge on how computers work, how VPNs do their thing, and a good overview of routers/networking. Honestly, the more you know, the more you're able to help out your team and the wider variety of things you get to work on, so knowing more isn't a bad thing here at all.
+As T2, you should have the above as well as some more in-depth knowledge on how computers work, how VPNs do their thing, and a good overview of routers/networking. Honestly, the more you know, the better you're able to help out your team and the wider variety of things you get to work on, so knowing more isn't a bad thing here at all.
 
 Tech QA are the ones that test our apps and make sure they work successfully. QA's job is twofold – to test new versions of our app that come from the development team, and to now-and-then check out specific app bugs that T2 brings to them.
 
@@ -53,8 +48,10 @@ You're currently reading some materials made by the training team! We're a techn
 Training encompases a lot, but the general gist is to make sure that we know what we're talking about. Once we know we're on the ball, we can produce materials that are accurate and clearly convey the required info for everyone to do their jobs. This includes general technical knowledge, specific account/billing flowcharts, other forms of documentation, and running training/coaching classes as appropriate.
 
 
+## Overview
 
+T1 is our front-line support, and raises issues to T2 when appropriate. T2 is our second-line support and raises specific problems with the app or our service to QA when appropriate. QA tests our app and issues brought to them, raising them to the developers and managers where appropriate.
 
+Training doesn't work inside the standard realm of support and escalation. Instead, the training team develops materials that help our T1, T2 and QA teams get more familiar with our apps/network and provides appropriate training/coaching.
 
-
-
+On the left you should see links to each team which goes more in-depth into how each team works, who they report to, and similar. If you have any questions or concerns, reach out to your manager so we can resolve them and figure out how to better explain how we work!

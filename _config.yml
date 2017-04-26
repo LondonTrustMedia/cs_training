@@ -19,11 +19,6 @@ codeurl: ''
 
 # Default categories (in order) to appear in the navigation
 collections:
-  intro:
-    output: true
-    no_header: true
-    display: Getting Started
-    order: 1
   teams:
     output: true
     display: Teams
@@ -34,6 +29,7 @@ collections:
     order: 3
   internal:
     output: true
+    no_header: true
     display: Internal Pages
     order: 4
   cs:
