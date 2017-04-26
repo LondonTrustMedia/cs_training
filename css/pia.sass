@@ -126,6 +126,24 @@ emph
 blockquote
     font-size: 1.2em
 
+.blink
+    animation: blink-animation 2s linear 0s infinite
+    -webkit-animation: blink-animation 2s linear 0s infinite
+@keyframes blink-animation
+    35%
+        opacity: 1.0
+    50%
+        opacity: 0.3
+    65%
+        opacity: 1.0
+@-webkit-keyframes blink-animation
+    35%
+        opacity: 1.0
+    50%
+        opacity: 0.3
+    65%
+        opacity: 1.0
+
 @media screen
     .hidescreen, .hideboth
         display: none
