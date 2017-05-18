@@ -36,10 +36,14 @@ collections:
     output: true
     display: Customer Service
     order: 5
+  apps:
+    output: true
+    display: PIA Apps
+    order: 6
   specifics:
     output: true
     display: Specific Training
-    order: 6
+    order: 7
 
 # Keep as an empty string if served up at the root. If served up at a specific
 # path (e.g. on GitHub pages) leave off the trailing slash, e.g. /my-project
